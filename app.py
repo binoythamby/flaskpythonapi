@@ -20,7 +20,7 @@ class Add(Resource):
         status_code = checkPostedData(postedData, "add")
         if (status_code!= 200):
             retJson = {
-                "Message": "An error happedned",
+                "Message": "An error happened",
                 "status_code": status_code
             }
             return jsonify(retJson)
